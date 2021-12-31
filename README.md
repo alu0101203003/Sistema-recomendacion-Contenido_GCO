@@ -26,9 +26,68 @@ El software proporcionará la siguiente salida:
 
 La tecnología escogida para la implementación ha sido una combinación de JavaScript y HTML5.
 
+#### Código 
+
+Se compone de una función principal que llama a la ejecución de las demás al accionar el botón de generar:
 
 ```
-dagvasd
+// --------------------------------------------------------- \\
+// Función principal
+// --------------------------------------------------------- \\
+
+function generar() {
+    var result = tablas(documentos_fichero)
+    imprimir(result)
+    var similitudes = matriz_similitudes(result)
+    imprimir_similitudes(similitudes)
+}
+```
+
+Se construirán las tablas para cada documento (llamando a su vez a la función auxiliar diseñada para cada atributo en concreto):
+
+```
+// --------------------------------------------------------- \\
+// Construir todas tablas para cada documento
+// --------------------------------------------------------- \\
+
+function tablas(documentos) {
+    var result = [];
+    for (var i = 0; i < documentos.length; i++){
+        result[i] = hacer_tabla(documentos[i],documentos)
+    }
+    return result
+}
+// --------------------------------------------------------- \\
+// Construir tabla para un documento
+// --------------------------------------------------------- \\
+
+function hacer_tabla(documento,documentos){
+
+    // Documento con duplicados
+    var array = limpiar(documento)
+
+    // ÍNIDICE (documento sin duplicados)
+    var terminos = [...new Set(array)] 
+
+    // TF
+    var TF = hacer_TF(array,terminos)
+    
+    // IDF
+    var N = documentos.length
+    var IDF = hacer_IDF(terminos,documentos,N)
+
+    // TF-IDF
+    var TF_IDF = hacer_TF_IDF(TF,IDF)
+
+    var result = {
+        terminos: terminos,
+        TF: TF,
+        IDF: IDF,
+        TF_IDF: TF_IDF
+    }
+
+    return result
+}
 ```
 
 ### Ejemplo de uso
