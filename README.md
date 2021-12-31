@@ -17,14 +17,14 @@ El software proporcionará la siguiente salida:
 * Una tabla con los siguientes atributos para cada documento
 	* Índice del término.
 	* Término.
-TF.
-IDF.
-TF-IDF.
+	* TF.
+	* IDF.
+	* TF-IDF.
 
-Similaridad coseno entre cada par de documentos.
+* Similaridad coseno entre cada par de documentos.
 
 
-	La tecnología escogida para la implementación ha sido una combinación de JavaScript y HTML5.
+La tecnología escogida para la implementación ha sido una combinación de JavaScript y HTML5.
 
 
 
