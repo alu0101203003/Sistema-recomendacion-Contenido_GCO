@@ -15,8 +15,8 @@ Pasos:
 El software proporcionará la siguiente salida:
 
 * Una tabla con los siguientes atributos para cada documento
- * Índice del término.
- * Término.
+	* Índice del término.
+	* Término.
 TF.
 IDF.
 TF-IDF.
