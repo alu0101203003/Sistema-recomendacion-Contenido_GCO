@@ -27,7 +27,9 @@ El software proporcionará la siguiente salida:
 La tecnología escogida para la implementación ha sido una combinación de JavaScript y HTML5.
 
 
-
+```
+dagvasd
+```
 
 ### Ejemplo de uso
 
