@@ -1,5 +1,5 @@
 # Sistemas de recomendación. Modelos Basados en el Contenido
-## Rauúl Martín Rigor - alu0101203003
+## Raúl Martín Rigor - alu0101203003
 
 ### Descripción del código
 El objetivo de esta práctica es implementar un sistema de recomendación siguiendo el modelo basados en el contenido.
@@ -175,3 +175,5 @@ This has great depth of flavor with its fresh apple and pear fruits and touch of
 Se cargará el archivo y, pulsando el botón de generar se mostrarán todos los datos necesarios.
 
 Aquí se enlazan [ejemplos de análisis con diferentes documentos](https://github.com/alu0101203003/Sistema-recomendacion-Contenido_GCO/tree/main/analisis)
+
+[PROBAR FUNCIONAMIENTO](https://alu0101203003.github.io/Sistema-recomendacion-Contenido_GCO/)
