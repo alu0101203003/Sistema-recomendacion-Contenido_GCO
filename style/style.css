@@ -1,0 +1,33 @@
+#general {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: max-content;
+}
+
+#salida {
+	align-items: center;
+	justify-content: center;
+	height: max-content;
+    border: 5px solid #0275d8;
+    border-radius: 15px;
+}
+
+#similitudes {
+    font-size: 70%;
+	align-items: center;
+	justify-content: center;
+	height: max-content;
+    border: 5px solid #0275d8;
+    border-radius: 15px;
+}
+
+#formulario {
+    width: 80%;
+    height: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 5px solid #0275d8;
+    border-radius: 15px;
+}
